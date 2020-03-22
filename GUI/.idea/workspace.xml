@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a19d581-4cbf-4fcb-8387-4f42d00a61a3" name="Default Changelist" comment="" />
+    <list default="true" id="7a19d581-4cbf-4fcb-8387-4f42d00a61a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/GUI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/test/demo/GUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/test/demo/MyBtnListen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/test/demo/MyJPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/test/demo/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/test/demo/extendsJPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/test/lifeGame/GUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/test/lifeGame/gameDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/META-INF/GUI.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/com/intellij/uiDesigner/core/AbstractLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/com/intellij/uiDesigner/core/DimensionInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/com/intellij/uiDesigner/core/GridConstraints.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/com/intellij/uiDesigner/core/GridLayoutManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/com/intellij/uiDesigner/core/HorizontalInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/com/intellij/uiDesigner/core/LayoutState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/com/intellij/uiDesigner/core/Spacer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/com/intellij/uiDesigner/core/VerticalInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/test/demo/GUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/test/demo/MyBtnListen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/test/demo/MyJPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/test/demo/Table.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/test/demo/extendsJPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/test/lifeGame/GUI$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/test/lifeGame/GUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/test/lifeGame/gameDemo$CellStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/target/classes/test/lifeGame/gameDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +52,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\My\.m2\repository" />
+        <option name="mavenHome" value="C:/Program Files/apache-maven-3.6.3-bin/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -22,6 +70,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1YxoO8WFwJe3J5lncYrzLpdMZ73" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,21 +78,28 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="test.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GUI (1)">
+  <component name="RunManager" selected="Application.gameDemo">
     <configuration name="GUI (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.lifeGame.GUI" />
       <module name="GUI" />
@@ -137,6 +193,9 @@
       <workItem from="1584198737606" duration="3615000" />
       <workItem from="1584363404170" duration="146000" />
       <workItem from="1584840997545" duration="4634000" />
+      <workItem from="1584886849517" duration="823000" />
+      <workItem from="1584887718058" duration="776000" />
+      <workItem from="1584889420187" duration="2075000" />
     </task>
     <servers />
   </component>
@@ -148,9 +207,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1584845377121" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1584363552347">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="492" y="237" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584887752549">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="492" y="237" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.689@0.0.1280.689" timestamp="1584887752549" />
+    <state x="458" y="140" key="FileChooserDialogImpl" timestamp="1584889619164">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="458" y="140" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1584889619164" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584363552347" />
     <state width="1493" height="149" key="GridCell.Tab.0.bottom" timestamp="1584845120725">
       <screen x="0" y="0" width="1536" height="824" />
@@ -172,13 +236,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="429" y="138" width="678" height="558" key="GuiDesigner.FormSource.Dialog/0.0.1536.824@0.0.1536.824" timestamp="1583895694850" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1584363536053">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="117" y="0" key="SettingsEditor" timestamp="1584889704330">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="117" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1584889704330" />
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584363536053" />
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1584363405221">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="374" y="197" key="com.intellij.ide.util.TipDialog" timestamp="1584889434344">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="374" y="197" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1584889434344" />
     <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584363405221" />
   </component>
 </project>
