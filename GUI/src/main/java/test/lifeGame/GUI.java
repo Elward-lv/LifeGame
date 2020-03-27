@@ -11,7 +11,7 @@ public class GUI extends JFrame {
     Thread thread;
 
     private final gameDemo game;
-    private boolean gameTimes = false;
+    private boolean GameStatus = false;
 
     private JButton jbuttonRun;
     private JLabel jlabelRows;
@@ -72,14 +72,21 @@ public class GUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //添加获取输入的代码，以及执行规则的代码,线程的暂停和重启
-                if(!gameTimes){
-                    gameTimes=true;
+                if(!GameStatus){
+                    GameStatus=true;
+                    game.cancle();
                     jbuttonRun.setText("stop");
                 }else{
-                    remove(game);
-                    game.cancle();
-                    game.generationRandom(50,50);
-                    gameTimes = false;
+                    String col_st = jtextCols.getText();
+                    String row_st = jtextRows.getText();
+                    String rate_st = jtextRate.getText();
+
+                    System.out.println("col:"+Integer.parseInt(col_st)+",row:"+Integer.parseInt(row_st)+",rate:"+Float.parseFloat(rate_st));
+                    game.Start();
+                    game.generationRandom(Integer.parseInt(col_st),Integer.parseInt(row_st));
+                    game.setFrequenceRate(Float.parseFloat(rate_st));
+
+                    GameStatus = false;
                     jbuttonRun.setText("run");
                 }
 
