@@ -32,11 +32,15 @@ public class gameDemo extends JPanel implements Runnable {
     public void run() {
         System.out.println("线程开始");
         while (true) {
+            synchronized (this) {
+                while (isCancel) {
+                    try {
+                        this.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
 
-            //现在问题是第二次开启线程，也就是说调用Start时，无法继续执行此线程
-            while (!isCancel ) { //|| !Thread.currentThread().isInterrupted()
-                //这里是线程的代码，取消线程刷新只需要调用cancle()函数
-                System.out.println(judgeCellStatus(0,0));
                 repaint();
                 try {
                     sleep();
@@ -44,6 +48,7 @@ public class gameDemo extends JPanel implements Runnable {
                     e.printStackTrace();
                 }
                 changeGeneration();
+
             }
         }
     }
@@ -56,26 +61,28 @@ public class gameDemo extends JPanel implements Runnable {
     * 根据给出得行列创建世界,初始化随机生成矩阵
      */
     public void generationRandom(int rows,int cols){
-        if(!(rows <= MaxRow && cols<= MaxCol)){
-            System.out.println("cols,rows error");
-            return ;
-        }
-        this.rows = rows;
-        this.cols = cols;
-        generation1 = new CellStatus[cols][rows];
-        generation2 = new CellStatus[cols][rows];
-
-        for(int i=0;i<this.cols;i++)
-            for(int j=0;j<this.rows;j++){
-                Random r = new Random();
-                int z = r.nextInt(100);
-                if(z>50) {
-                    generation1[i][j] = CellStatus.Active;
-                }
-                else {
-                    generation1[i][j] = CellStatus.dead;
-                }
+        synchronized(this) {
+            if (!(rows <= MaxRow && cols <= MaxCol)) {
+                System.out.println("cols,rows error");
+                return;
             }
+            this.rows = rows;
+            this.cols = cols;
+            generation1 = new CellStatus[cols][rows];
+            generation2 = new CellStatus[cols][rows];
+
+            for (int i = 0; i < this.cols; i++)
+                for (int j = 0; j < this.rows; j++) {
+                    Random r = new Random();
+                    int z = r.nextInt(100);
+                    if (z > 50) {
+                        generation1[i][j] = CellStatus.Active;
+                    } else {
+                        generation1[i][j] = CellStatus.dead;
+                    }
+                }
+            this.notifyAll();
+        }
     }
 
 
@@ -95,6 +102,12 @@ public class gameDemo extends JPanel implements Runnable {
         temp = generation1;
         generation1 = generation2;
         generation2 = temp;
+
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<cols;j++){
+                generation2[i][j] = CellStatus.dead;
+            }
+        }
         return 1;
     }
 
@@ -104,16 +117,16 @@ public class gameDemo extends JPanel implements Runnable {
     int judgeCellStatus(int col,int row){
         int activeCount = 0;
 
-        if( (col-1)>=0 && (row-1)>=0 && generation1[col-1][row-1] == CellStatus.Active ) activeCount++;
-        if( (col-1)>=0 && generation1[col-1][row] ==CellStatus.Active) activeCount++;
-        if( (col-1)>=0 && (row+1)<rows && generation1[col-1][row+1] == CellStatus.Active) activeCount++;
+        if( (col-1)>=0 && (row-1)>=0 && (generation1[col-1][row-1] == CellStatus.Active) ) activeCount++;//
+        if( (col-1)>=0 && (generation1[col-1][row] ==CellStatus.Active)) activeCount++;
+        if( (col-1)>=0 && (row+1)<rows && (generation1[col-1][row+1] == CellStatus.Active)) activeCount++;
 
-        if( (row-1)>=0 && generation1[col][row-1] ==CellStatus.Active ) activeCount++;
-        if( (row+1)<rows && generation1[col][row+1] == CellStatus.Active ) activeCount++;
+        if( (row-1)>=0 && (generation1[col][row-1] ==CellStatus.Active)) activeCount++;//
+        if( (row+1)<rows && (generation1[col][row+1] == CellStatus.Active )) activeCount++;
 
-        if( (col+1)<cols && (row-1)>=0 && generation1[col+1][row-1] ==CellStatus.Active) activeCount++;
-        if( (col+1)<cols && generation1[col][row] ==CellStatus.Active) activeCount++;
-        if( (col+1)<cols && (row+1)<rows && generation1[col+1][row+1]==CellStatus.Active) activeCount++;
+        if( (col+1)<cols && (row-1)>=0 && (generation1[col+1][row-1] ==CellStatus.Active)) activeCount++;
+        if( (col+1)<cols  && (generation1[col+1][row]==CellStatus.Active)) activeCount++;
+        if( (col+1)<cols && (row+1)<rows && (generation1[col+1][row+1]==CellStatus.Active)) activeCount++;
 
         if(activeCount == 3) {
             generation2[col][row] = CellStatus.Active;
