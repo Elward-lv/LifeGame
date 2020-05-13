@@ -1,9 +1,8 @@
 package test.lifeGame;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JPanel;
+import java.awt.Graphics;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Active 表示活,Dead 表示死
@@ -111,8 +110,11 @@ public class gameDemo extends JPanel implements Runnable {
         return 1;
     }
 
-    /*判断每个细胞周围的活细胞个数
-    *  并且改变下一代的这个细胞的状态
+    /**
+     * 判断每个细胞周围的活细胞个数  并且改变下一代的这个细胞的状态
+     * @param col
+     * @param row
+     * @return
      */
     int judgeCellStatus(int col , int row){
         int activeCount = 0 ;
@@ -155,8 +157,12 @@ public class gameDemo extends JPanel implements Runnable {
     /**
      * 终止开启线程刷新
      */
-    public void cancle(){ isCancel = true; }
-    public void Start(){ isCancel = false; }
+    public void cancle(){
+        isCancel = true;
+    }
+    public void Start(){
+        isCancel = false;
+    }
     public void sleep() throws InterruptedException {
         int rate = (int) frequenceRate * 1000;
         Thread.sleep(rate);
