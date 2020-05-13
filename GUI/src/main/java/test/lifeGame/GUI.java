@@ -1,11 +1,12 @@
 package test.lifeGame;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 /**
  * 对于遇到的覆盖问题，可以使用多个JPanel试试能不能解决，实在不行其他控件只能放菜单栏
  */

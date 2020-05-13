@@ -1,9 +1,8 @@
 package test.lifeGame;
 
-import javax.swing.JPanel;
 import java.awt.Graphics;
+import javax.swing.JPanel;
 import java.util.Random;
-
 /**
  * Active 表示活,Dead 表示死
  */
