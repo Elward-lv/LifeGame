@@ -1,12 +1,11 @@
 package test.lifeGame;
 
-import test.demo.extendsJPanel;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-//对于遇到的覆盖问题，可以使用多个JPanel试试能不能解决，实在不行其他控件只能放菜单栏
+/**
+ * 对于遇到的覆盖问题，可以使用多个JPanel试试能不能解决，实在不行其他控件只能放菜单栏
+ */
 public class GUI extends JFrame {
     Thread thread;
 
@@ -72,7 +71,7 @@ public class GUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //添加获取输入的代码，以及执行规则的代码,线程的暂停和重启
-                if(!GameStatus){
+                if(!GameStatus) {
                     GameStatus=true;
                     game.cancle();
                     jbuttonRun.setText("stop");
@@ -81,12 +80,12 @@ public class GUI extends JFrame {
                     String row_st = jtextRows.getText();
                     String rate_st = jtextRate.getText();
 
-                    System.out.println("col:"+Integer.parseInt(col_st)+",row:"+Integer.parseInt(row_st)+",rate:"+Float.parseFloat(rate_st));
+                    System.out.println("col:" + Integer.parseInt(col_st)+ ",row:" + Integer.parseInt(row_st) + ",rate:" + Float.parseFloat(rate_st));
                     game.Start();
-                    game.generationRandom(Integer.parseInt(col_st),Integer.parseInt(row_st));
+                    game.generationRandom(Integer.parseInt(col_st) , Integer.parseInt(row_st) );
                     game.setFrequenceRate(Float.parseFloat(rate_st));
 
-                    GameStatus = false;
+                    GameStatus = false ;
                     jbuttonRun.setText("run");
                 }
 
