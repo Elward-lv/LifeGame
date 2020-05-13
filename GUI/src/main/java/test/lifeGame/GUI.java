@@ -38,7 +38,6 @@ public class GUI extends JFrame  {
         setBounds(200,150,700,540);
         getContentPane().setLayout(null);
 
-        //设置Rate文本
         jLabelRate = new JLabel("Rate:");
         jLabelRate.setBounds(500,100,40,20);
         this.getContentPane().add(jLabelRate);
@@ -47,7 +46,6 @@ public class GUI extends JFrame  {
         jtextRate.setBounds(540,100,60,20);
         this.getContentPane().add(jtextRate);
 
-        //设置cols文本
         jLabelCols = new JLabel("Cols:");
         jLabelCols.setBounds(500,200,40,20);
         this.getContentPane().add(jLabelCols);
@@ -56,7 +54,6 @@ public class GUI extends JFrame  {
         jtextCols.setBounds(540,200,60,20);
         this.getContentPane().add(jtextCols);
 
-        //设置Rows文本
         jlabelRows = new JLabel();
         jlabelRows.setText("Rows:");
         jlabelRows.setBounds(500,300,40,20);
@@ -66,14 +63,15 @@ public class GUI extends JFrame  {
         jtextRows.setBounds(540,300,60,20);
         this.getContentPane().add(jtextRows);
 
-        //run按钮
         jbuttonRun = new JButton("run");
         jbuttonRun.setBounds(500,400,100,40);
         this.getContentPane().add(jbuttonRun);
         jbuttonRun.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //添加获取输入的代码，以及执行规则的代码,线程的暂停和重启
+                /**
+                 * 添加获取输入的代码，以及执行规则的代码,线程的暂停和重启
+                 */
                 if(!GameStatus) {
                     GameStatus=true;
                     game.cancle();
