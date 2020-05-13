@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 /**
  * 对于遇到的覆盖问题，可以使用多个JPanel试试能不能解决，实在不行其他控件只能放菜单栏
  */
-public class GUI extends JFrame {
+public class GUI extends JFrame  {
     Thread thread;
 
     private final gameDemo game;
@@ -25,7 +25,7 @@ public class GUI extends JFrame {
     private JLabel jLabelRate;
     private JTextField jtextRate;
 
-    public GUI(){
+    public GUI() {
         game = new gameDemo(50,50);//可用像素:500
         game.setBounds(0,0,450,450);
         thread = new Thread(game);
@@ -33,7 +33,7 @@ public class GUI extends JFrame {
         add(game);
     }
 
-    public  void init(){
+    public  void init() {
         setTitle("生命游戏");
         setBounds(200,150,700,540);
         getContentPane().setLayout(null);
@@ -93,7 +93,7 @@ public class GUI extends JFrame {
                 }
 
             }
-        });
+        } ) ;
 
     }
 

@@ -9,7 +9,7 @@ import java.util.Random;
  */
 public class gameDemo extends JPanel implements Runnable {
 
-    static enum CellStatus{
+    static enum CellStatus {
         Active ,
         dead
     }
@@ -90,10 +90,10 @@ public class gameDemo extends JPanel implements Runnable {
      * 根据规则改变矩阵
      * @return
      */
-    public int changeGeneration(){
+    public int changeGeneration() {
 
-        for(int i=0; i < rows; i++){
-            for(int j=0; j <cols ; j++){
+        for(int i=0; i < rows; i++) {
+            for(int j=0; j <cols ; j++) {
                 judgeCellStatus(i,j);
             }
         }
@@ -102,8 +102,8 @@ public class gameDemo extends JPanel implements Runnable {
         generation1 = generation2;
         generation2 = temp;
 
-        for(int i=0 ; i < rows ; i++){
-            for(int j=0 ; j < cols ; j++){
+        for(int i=0 ; i < rows ; i++) {
+            for(int j=0 ; j < cols ; j++) {
                 generation2[i][j] = CellStatus.dead;
             }
         }
@@ -116,25 +116,33 @@ public class gameDemo extends JPanel implements Runnable {
      * @param row
      * @return
      */
-    int judgeCellStatus(int col , int row){
+    int judgeCellStatus(int col , int row) {
         int activeCount = 0 ;
 
-        if( (col-1) >= 0 && (row-1) >= 0 && (generation1[col-1][row-1] == CellStatus.Active) ) activeCount++;//
-        if( (col-1) >= 0 && (generation1[col-1][row] == CellStatus.Active)) activeCount++;
-        if( (col-1) >= 0 && (row+1) < rows && (generation1[col-1][row+1] == CellStatus.Active)) activeCount++;
+        if( (col-1) >= 0 && (row-1) >= 0 && (generation1[col-1][row-1] == CellStatus.Active) )
+            activeCount++;//
+        if( (col-1) >= 0 && (generation1[col-1][row] == CellStatus.Active))
+            activeCount++;
+        if( (col-1) >= 0 && (row+1) < rows && (generation1[col-1][row+1] == CellStatus.Active))
+            activeCount++;
 
-        if( (row-1) >= 0 && (generation1[col][row-1] == CellStatus.Active)) activeCount++;//
-        if( (row+1) < rows && (generation1[col][row+1] == CellStatus.Active )) activeCount++;
+        if( (row-1) >= 0 && (generation1[col][row-1] == CellStatus.Active))
+            activeCount++;//
+        if( (row+1) < rows && (generation1[col][row+1] == CellStatus.Active ))
+            activeCount++;
 
-        if( (col+1) < cols && (row-1) >= 0 && (generation1[col+1][row-1] == CellStatus.Active)) activeCount++;
-        if( (col+1) < cols  && (generation1[col+1][row] == CellStatus.Active)) activeCount++;
-        if( (col+1) < cols && (row+1) < rows && (generation1[col+1][row+1] == CellStatus.Active)) activeCount++;
+        if( (col+1) < cols && (row-1) >= 0 && (generation1[col+1][row-1] == CellStatus.Active))
+            activeCount++;
+        if( (col+1) < cols  && (generation1[col+1][row] == CellStatus.Active))
+            activeCount++;
+        if( (col+1) < cols && (row+1) < rows && (generation1[col+1][row+1] == CellStatus.Active))
+            activeCount++;
 
         if(activeCount == 3) {
             generation2[col][row] = CellStatus.Active;
-        }else if(activeCount == 2){
+        } else if(activeCount == 2) {
             generation2[col][row] = generation1[col][row];
-        }else{
+        } else {
             generation2[col][row] = CellStatus.dead;
         }
 
@@ -144,23 +152,24 @@ public class gameDemo extends JPanel implements Runnable {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g) ;
-        for(int i=0 ; i < rows; i++ )
-            for(int j=0 ; j < cols ; j++){
-                if(generation1[i][j] == CellStatus.Active){
-                    g.fillRect(j*10, i*10, 10, 10);
-                }else{
-                    g.drawRect(j*10, i*10, 10, 10);
+        for (int i=0 ; i < rows; i++ ) {
+            for (int j = 0; j < cols; j++) {
+                if (generation1[i][j] == CellStatus.Active) {
+                    g.fillRect(j * 10, i * 10, 10, 10);
+                } else {
+                    g.drawRect(j * 10, i * 10, 10, 10);
                 }
             }
+        }
     }
 
     /**
      * 终止开启线程刷新
      */
-    public void cancle(){
+    public void cancle() {
         isCancel = true;
     }
-    public void Start(){
+    public void Start() {
         isCancel = false;
     }
     public void sleep() throws InterruptedException {
@@ -179,7 +188,7 @@ public class gameDemo extends JPanel implements Runnable {
     public void setFrequenceRate(float frequenceRate) {
         if(frequenceRate > 0 && frequenceRate < 10){
             this.frequenceRate = frequenceRate;
-        }else{
+        } else {
             return ;
         }
     }
