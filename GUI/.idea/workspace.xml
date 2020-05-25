@@ -3,18 +3,43 @@
   <component name="ChangeListManager">
     <list default="true" id="7a19d581-4cbf-4fcb-8387-4f42d00a61a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/demo/extendsJPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/demo/extendsJPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/lifeGame/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/lifeGame/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/lifeGame/gameDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/lifeGame/gameDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/demo/extendsJPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/demo/extendsJPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/lifeGame/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/lifeGame/GUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/lifeGame/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/lifeGame/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/lifeGame/gameDemo$CellStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/lifeGame/gameDemo$CellStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/lifeGame/gameDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/lifeGame/gameDemo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="GUI" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -29,6 +54,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1YxoO8WFwJe3J5lncYrzLpdMZ73" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -38,20 +66,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="F:/IJ-idea/springboot-helloworld-quick2" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="plugins.junitgenerator.application" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="test.lifeGame" />
+      <recent name="test.demo" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="test.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GUI (1)">
-    <configuration name="GUI (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.GUI">
+    <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.lifeGame.GUI" />
       <module name="GUI" />
       <extension name="coverage">
@@ -64,47 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.demo.GUI" />
-      <module name="GUI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyJPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.demo.MyJPanel" />
-      <module name="GUI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Table" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.demo.Table" />
-      <module name="GUI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="gameDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.lifeGame.gameDemo" />
+    <configuration name="TestChangeAndJudge.judgeCellStatusOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GUI" />
       <extension name="coverage">
         <pattern>
@@ -112,17 +109,69 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="test.lifeGame" />
+      <option name="MAIN_CLASS_NAME" value="test.lifeGame.TestChangeAndJudge" />
+      <option name="METHOD_NAME" value="judgeCellStatusOut" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRandom.generationRandom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.lifeGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.lifeGame" />
+      <option name="MAIN_CLASS_NAME" value="test.lifeGame.TestRandom" />
+      <option name="METHOD_NAME" value="generationRandom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRandom.generationRandom2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.lifeGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.lifeGame" />
+      <option name="MAIN_CLASS_NAME" value="test.lifeGame.TestRandom" />
+      <option name="METHOD_NAME" value="generationRandom2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRandom.generationRandom3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.lifeGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.lifeGame" />
+      <option name="MAIN_CLASS_NAME" value="test.lifeGame.TestRandom" />
+      <option name="METHOD_NAME" value="generationRandom3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GUI (1)" />
-        <item itemvalue="Application.MyJPanel" />
-        <item itemvalue="Application.gameDemo" />
-        <item itemvalue="Application.Table" />
         <item itemvalue="Application.GUI" />
+        <item itemvalue="JUnit.TestRandom.generationRandom" />
+        <item itemvalue="JUnit.TestChangeAndJudge.judgeCellStatusOut" />
+        <item itemvalue="JUnit.TestRandom.generationRandom3" />
+        <item itemvalue="JUnit.TestRandom.generationRandom2" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +205,10 @@
       <workItem from="1585321621574" duration="5184000" />
       <workItem from="1585358665885" duration="920000" />
       <workItem from="1587819986465" duration="1471000" />
-      <workItem from="1589381668504" duration="1750000" />
+      <workItem from="1589381668504" duration="1858000" />
+      <workItem from="1589930751958" duration="2663000" />
+      <workItem from="1589933983530" duration="8446000" />
+      <workItem from="1590362518602" duration="11092000" />
     </task>
     <servers />
   </component>
@@ -168,58 +220,66 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1585277026500" />
-    <state x="963" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1584886324180">
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1590375771839">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="963" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1584886324180" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1590375771839" />
+    <state x="963" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1589940554219">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="963" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589940554219" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1585137450443">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585137450443" />
-    <state width="1493" height="236" key="GridCell.Tab.0.bottom" timestamp="1587821467024">
+    <state width="1493" height="153" key="GridCell.Tab.0.bottom" timestamp="1590390708066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="236" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587821467024" />
-    <state width="1493" height="236" key="GridCell.Tab.0.center" timestamp="1587821467024">
+    <state width="1493" height="153" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590390708066" />
+    <state width="1493" height="153" key="GridCell.Tab.0.center" timestamp="1590390708065">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="236" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587821467024" />
-    <state width="1493" height="236" key="GridCell.Tab.0.left" timestamp="1587821467024">
+    <state width="1493" height="153" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590390708065" />
+    <state width="1493" height="153" key="GridCell.Tab.0.left" timestamp="1590390708065">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="236" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587821467024" />
-    <state width="1493" height="236" key="GridCell.Tab.0.right" timestamp="1587821467024">
+    <state width="1493" height="153" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590390708065" />
+    <state width="1493" height="153" key="GridCell.Tab.0.right" timestamp="1590390708066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="236" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587821467024" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1585326856598">
+    <state width="1493" height="153" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590390708066" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1589943025683">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585326856598" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1585326856598">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589943025683" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1589943025683">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585326856598" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1585326856598">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1589943025683" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1589943025683">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585326856598" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1585326856598">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1589943025683" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1589943025683">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585326856598" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589943025683" />
     <state x="429" y="138" width="678" height="558" key="GuiDesigner.FormSource.Dialog" timestamp="1583895694850">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="429" y="138" width="678" height="558" key="GuiDesigner.FormSource.Dialog/0.0.1536.824@0.0.1536.824" timestamp="1583895694850" />
-    <state x="334" y="0" key="SettingsEditor" timestamp="1587821463126">
+    <state x="334" y="0" key="SettingsEditor" timestamp="1590372566099">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="334" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587821463126" />
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1589381667353">
+    <state x="334" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1590372566099" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1590362518577">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589381667353" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1590362518577" />
+    <state x="691" y="123" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590372666861">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="691" y="123" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1590372666861" />
     <state x="511" y="30" key="refactoring.ChangeSignatureDialog" timestamp="1584866186388">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

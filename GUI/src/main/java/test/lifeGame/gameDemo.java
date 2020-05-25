@@ -191,4 +191,16 @@ public class gameDemo extends JPanel implements Runnable {
             return ;
         }
     }
+
+    /**
+     * 单元测试需要的参数
+     * @return
+     */
+    public CellStatus[][] getGeneration1() {
+        return generation1;
+    }
+
+    public CellStatus[][] getGeneration2() {
+        return generation2;
+    }
 }

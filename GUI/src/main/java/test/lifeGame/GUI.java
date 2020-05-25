@@ -26,12 +26,15 @@ public class GUI extends JFrame  {
     private JLabel jLabelRate;
     private JTextField jtextRate;
 
+    /**
+     * 耦合太大，导致出问题的话可能是这里出问题
+     */
     public GUI() {
         game = new gameDemo(50,50);//可用像素:500
         game.setBounds(0,0,450,450);
         thread = new Thread(game);
-        thread.start();
-        add(game);
+
+        add(game);thread.start();
     }
 
     public  void init() {

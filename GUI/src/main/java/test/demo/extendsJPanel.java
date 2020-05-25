@@ -15,5 +15,6 @@ public class extendsJPanel extends JPanel {
                     g.drawRect(j*10, i*10, 10, 10);
                 }
             }
+        
     }
 }
